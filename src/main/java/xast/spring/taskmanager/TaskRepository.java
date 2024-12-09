@@ -1,8 +1,6 @@
 package xast.spring.taskmanager;
 
-import java.util.List;
-import java.util.Optional;
-import java.util.UUID;
+import java.util.*;
 
 public interface TaskRepository {
 
