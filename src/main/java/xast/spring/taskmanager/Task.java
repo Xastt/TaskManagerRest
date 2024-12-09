@@ -1,4 +1,4 @@
-package xast.spring.showcase;
+package xast.spring.taskmanager;
 
 import java.util.UUID;
 
