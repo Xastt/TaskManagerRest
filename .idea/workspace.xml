@@ -4,12 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47aac5f6-ed97-49f3-be47-14dba56a0eed" name="Changes" comment="clean code">
-      <change afterPath="$PROJECT_DIR$/src/test/java/xast/spring/taskmanager/TasksRestControllerIT.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/xast/spring/taskmanager/TasksRestControllerTest.java" afterDir="false" />
+    <list default="true" id="47aac5f6-ed97-49f3-be47-14dba56a0eed" name="Changes" comment="Add tests">
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/xast/spring/taskmanager/JdbcOperationsTaskRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V1__initial_schema.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/sql.tasks_rest_controller/test_data.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/xast/spring/taskmanager/InMemTaskRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xast/spring/taskmanager/InMemTaskRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/xast/spring/taskmanager/InMemTaskRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/xast/spring/taskmanager/TasksRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xast/spring/taskmanager/TasksRestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/xast/spring/taskmanager/TasksRestControllerIT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/xast/spring/taskmanager/TasksRestControllerIT.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,8 +24,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -42,6 +46,7 @@
     "HTTP Request.scratch | #1.executor": "Run",
     "HTTP Request.scratch | #2.executor": "Run",
     "HTTP Request.scratch | #3.executor": "Run",
+    "JUnit.TasksRestControllerIT.executor": "Run",
     "JUnit.TasksRestControllerIT.handleCreateNewTask_PayloadIsInvalid_ReturnsValidResponseEntity.executor": "Run",
     "JUnit.TasksRestControllerIT.handleCreateNewTask_PayloadIsValid_ReturnsValidResponseEntity.executor": "Run",
     "JUnit.TasksRestControllerIT.handleGetAllTasks_ReturnsValidResponseEntity.executor": "Run",
@@ -67,7 +72,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Global Libraries",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.4",
     "settings.editor.selected.configurable": "File.Encoding",
@@ -83,11 +88,29 @@
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\JavaProj\TaskManagerRest\src\test\resources\sql.tasks_rest_controller" />
+    </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="xast.spring.taskmanager" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TasksRestControllerIT.handleCreateNewTask_PayloadIsInvalid_ReturnsValidResponseEntity">
+  <component name="RunManager" selected="JUnit.TasksRestControllerIT">
+    <configuration name="TasksRestControllerIT" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TaskManagerRest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="xast.spring.taskmanager.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="xast.spring.taskmanager" />
+      <option name="MAIN_CLASS_NAME" value="xast.spring.taskmanager.TasksRestControllerIT" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TasksRestControllerIT.handleCreateNewTask_PayloadIsInvalid_ReturnsValidResponseEntity" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TaskManagerRest" />
       <extension name="coverage">
@@ -152,29 +175,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TasksRestControllerTest.handleCreateNewTask_PayloadIsValid_ReturnsValidResponseEntity" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TaskManagerRest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="xast.spring.taskmanager.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="xast.spring.taskmanager" />
-      <option name="MAIN_CLASS_NAME" value="xast.spring.taskmanager.TasksRestControllerTest" />
-      <option name="METHOD_NAME" value="handleCreateNewTask_PayloadIsValid_ReturnsValidResponseEntity" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TasksRestControllerIT" />
         <item itemvalue="JUnit.TasksRestControllerIT.handleCreateNewTask_PayloadIsInvalid_ReturnsValidResponseEntity" />
         <item itemvalue="JUnit.TasksRestControllerIT.handleCreateNewTask_PayloadIsValid_ReturnsValidResponseEntity" />
         <item itemvalue="JUnit.TasksRestControllerIT.handleGetAllTasks_ReturnsValidResponseEntity" />
         <item itemvalue="JUnit.TasksRestControllerTest.handleCreateNewTask_PayloadIsInalid_ReturnsValidResponseEntity" />
-        <item itemvalue="JUnit.TasksRestControllerTest.handleCreateNewTask_PayloadIsValid_ReturnsValidResponseEntity" />
       </list>
     </recent_temporary>
   </component>
@@ -198,7 +205,10 @@
       <workItem from="1733745042966" duration="3932000" />
       <workItem from="1733749109934" duration="405000" />
       <workItem from="1733761952399" duration="25000" />
-      <workItem from="1733938169339" duration="6853000" />
+      <workItem from="1733938169339" duration="7259000" />
+      <workItem from="1733991083490" duration="200000" />
+      <workItem from="1733992712730" duration="45000" />
+      <workItem from="1734008424265" duration="3241000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -216,7 +226,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733749506951</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Add tests">
+      <option name="closed" value="true" />
+      <created>1733945391533</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1733945391534</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -225,6 +243,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init" />
     <MESSAGE value="clean code" />
-    <option name="LAST_COMMIT_MESSAGE" value="clean code" />
+    <MESSAGE value="Add tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add tests" />
   </component>
 </project>

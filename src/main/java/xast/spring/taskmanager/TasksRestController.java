@@ -2,6 +2,7 @@ package xast.spring.taskmanager;
 
 import org.springframework.context.MessageSource;
 import org.springframework.http.*;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.util.UriComponentsBuilder;
 import java.util.*;
@@ -28,6 +29,7 @@ public class TasksRestController {
     }
 
     @PostMapping
+    @Transactional
     public ResponseEntity<?> handleCreateNewTask(
             @RequestBody NewTaskPayLoad payLoad,
             UriComponentsBuilder uriComponentsBuilder,
